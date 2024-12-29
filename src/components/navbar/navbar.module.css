@@ -3,24 +3,62 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo {
+  }
+  
+  .logo {
     font-weight: bold;
     font-size: 22px;
-}
-
-.links {
+  }
+  
+  .links {
     display: flex;
     align-items: center;
     gap: 20px;
-}
+  }
 
-.logout {
+  .link {
+    text-decoration: none;
+  }
+  
+  .logout {
     padding: 5px;
     border: none;
     background-color: #53c28b;
     color: white;
     cursor: pointer;
     border-radius: 3px;
-}
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: gray;
+    margin: 4px 0;
+  }
+
+  @media (max-width: 940px) {
+    .links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: transparent;
+      width: 100%;
+    }
+  
+    .links.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+
+  }

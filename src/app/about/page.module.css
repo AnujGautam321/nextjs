@@ -40,3 +40,10 @@
     font-weight: 300;
     text-align: justify;
 }
+
+@media (max-width: 940px) {
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+    }
+  }
